@@ -19,13 +19,13 @@ These follow Sec. II of the article.
 
 | File | Figure | Contents |
 |---|---|---|
-| `data/fig2a_fidelity_samples_clifford_n4.csv` | 2(a) | Raw fidelities at `n = 4`. Each of the 1000 rows is one independent Clifford scrambler; the 9 columns are `gamma` = 0.8, 1.6, 2.4, 3.2, 4.0, 4.8, 5.6, 7.0, 9.0. |
-| `data/fig2a_fidelity_samples_haar_n4.csv` | 2(a) | The same for 1000 Haar scramblers. |
-| `data/fig2a_summary_n4.csv` | 2(a) | The plotted points: mean of `F` and its standard error (population standard deviation divided by the square root of 1000) for each ensemble. |
-| `data/fig2b_std_F_haar.csv` | 2(b), squares | At `gamma = 4 pi/3`: number of Haar scramblers, sample standard deviation of `F` (ddof = 1), and its error from 300 bootstrap resamples, for `n` = 2 to 8. |
-| `data/fig2b_exact_curves.csv` | 2(b), lines | At `g = 4 pi/(3n)`: exact mean infidelity `1 - <F>` (Eq. (9)) and exact standard deviation of `F` over Clifford scramblers (Proposition 2), for `n` from 2 to 2000. |
-| `data/fig2c_doped_clifford_n3.csv` | 2(c) | At `n = 3` and `g = 1.095`, with 1500 scramblers per row: doped Clifford circuits with `t` T gates (Eq. (6), each T on a uniformly chosen qubit), plus a Haar reference row. Columns: mean, standard error and standard deviation of `F`; mean and standard error of `M2` of the scrambled state `U I U^dagger |Psi_0>` on all 8 qubits, before the coupling. |
-| `data/fig2_data.npz` | all | The same arrays in one NumPy archive, with keys prefixed `fig2a_`, `fig2b_` and `fig2c_`. |
+| `fig2a_fidelity_samples_clifford_n4.csv` | 2(a) | Raw fidelities at `n = 4`. Each of the 1000 rows is one independent Clifford scrambler; the 9 columns are `gamma` = 0.8, 1.6, 2.4, 3.2, 4.0, 4.8, 5.6, 7.0, 9.0. |
+| `fig2a_fidelity_samples_haar_n4.csv` | 2(a) | The same for 1000 Haar scramblers. |
+| `fig2a_summary_n4.csv` | 2(a) | The plotted points: mean of `F` and its standard error (population standard deviation divided by the square root of 1000) for each ensemble. |
+| `fig2b_std_F_haar.csv` | 2(b), squares | At `gamma = 4 pi/3`: number of Haar scramblers, sample standard deviation of `F` (ddof = 1), and its error from 300 bootstrap resamples, for `n` = 2 to 8. |
+| `fig2b_exact_curves.csv` | 2(b), lines | At `g = 4 pi/(3n)`: exact mean infidelity `1 - <F>` (Eq. (9)) and exact standard deviation of `F` over Clifford scramblers (Proposition 2), for `n` from 2 to 2000. |
+| `fig2c_doped_clifford_n3.csv` | 2(c) | At `n = 3` and `g = 1.095`, with 1500 scramblers per row: doped Clifford circuits with `t` T gates (Eq. (6), each T on a uniformly chosen qubit), plus a Haar reference row. Columns: mean, standard error and standard deviation of `F`; mean and standard error of `M2` of the scrambled state `U I U^dagger |Psi_0>` on all 8 qubits, before the coupling. |
+| `fig2_data.npz` | all | The same arrays in one NumPy archive, with keys prefixed `fig2a_`, `fig2b_` and `fig2c_`. |
 
 Standard errors in `fig2a_*` and `fig2c_*` use the population standard deviation (ddof = 0).
 
